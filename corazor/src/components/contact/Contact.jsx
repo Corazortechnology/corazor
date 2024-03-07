@@ -23,8 +23,18 @@ const Contact = () => {
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
+  const [userData,setUserData]=useState({name:"",email:"",massage:""})
 
   const isInView = useInView(ref, { margin: "-100px" });
+
+
+  function submitForm(){
+    if(!userData.name || !userData.email || !userData.massage){
+      console.log("empty fields")
+    }
+    console.log(userData);
+  }
+
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -106,10 +116,10 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Submit</button>
+          <input type="text" required placeholder="Name" name="name" onChange={(e)=>setUserData({...userData,name:e.target.value})}/>
+          <input type="email" required placeholder="Email" name="email" onChange={(e)=>setUserData({...userData,email:e.target.value})}/>
+          <textarea rows={8} required placeholder="Message" name="message" onChange={(e)=>setUserData({...userData,massage:e.target.value})}/>
+          <button onClick={()=>submitForm()}>Submit</button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>
