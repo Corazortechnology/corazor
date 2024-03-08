@@ -2,6 +2,8 @@ import { useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const variants = {
   initial: {
@@ -24,16 +26,31 @@ const Contact = () => {
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
   const [userData,setUserData]=useState({name:"",email:"",massage:""})
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
   const isInView = useInView(ref, { margin: "-100px" });
 
 
-  function submitForm(){
-    if(!userData.name || !userData.email || !userData.massage){
-      console.log("empty fields")
+   const handleSubmit = async (e) => {
+       e.preventDefault();
+       console.log(message);
+        try {
+            const res = await axios.post('http://localhost:4040/api/v1/auth/register',{name, email,message});
+            
+            if(res && res.data.success) {
+                toast.success(res.data && res.data.message);
+                setName("")
+                setEmail("")
+                setMessage("") 
+            }else {
+                toast.error(res.data.message);
+            }
+        } catch (error) {
+            console.log(error);
+        }
     }
-    console.log(userData);
-  }
 
 
   const sendEmail = (e) => {
@@ -111,15 +128,15 @@ const Contact = () => {
         </motion.div>
         <motion.form
           ref={formRef}
-          onSubmit={sendEmail}
+          // onSubmit={(e) => handleSubmit(e)}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" onChange={(e)=>setUserData({...userData,name:e.target.value})}/>
-          <input type="email" required placeholder="Email" name="email" onChange={(e)=>setUserData({...userData,email:e.target.value})}/>
-          <textarea rows={8} required placeholder="Message" name="message" onChange={(e)=>setUserData({...userData,massage:e.target.value})}/>
-          <button onClick={()=>submitForm()}>Submit</button>
+          <input type="text" required placeholder="Name" name="name" value={name} onChange={(e)=>setName(e.target.value)}/>
+          <input type="email" required placeholder="Email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+          <textarea rows={8} required placeholder="Message" name="message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
+          <button onClick={(e) => handleSubmit(e)}>Submit</button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>
