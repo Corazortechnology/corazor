@@ -47,9 +47,9 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>HARVEY TYLER</motion.h2>
+          <motion.h2 variants={textVariants}>Tushar Jain</motion.h2>
           <motion.h1 variants={textVariants}>
-            Web developer and UI designer
+          I assist businesses, startups, and law firms by drafting and reviewing their legal contracts. Additionally, I provide legal advice, opinions, and consultations.
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
@@ -71,7 +71,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Writer Content Creator Influencer
+        Corazor Technology
       </motion.div>
       <div className="imageContainer">
         <img src="/hero.png" alt="" />
