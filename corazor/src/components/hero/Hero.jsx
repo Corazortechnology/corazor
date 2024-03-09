@@ -47,8 +47,8 @@ const Hero = () => {
           initial="initial"
           animate="animate"
         >
-          <motion.h2 variants={textVariants}>Tushar Jain</motion.h2>
-          <motion.h1 variants={textVariants}>
+          <motion.h2 style={{letterSpacing:1,fontSize:"25px"}} variants={textVariants}>Tushar Jain</motion.h2>
+          <motion.h1 style={{letterSpacing:1,fontSize:"27px"}}   variants={textVariants}>
           I assist businesses, startups, and law firms by drafting and reviewing their legal contracts. Additionally, I provide legal advice, opinions, and consultations.
           </motion.h1>
           <motion.div variants={textVariants} className="buttons">
