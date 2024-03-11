@@ -35,17 +35,20 @@ const Contact = () => {
 
    const handleSubmit = async (e) => {
        e.preventDefault();
-       console.log(message);
+       if(!name || !email || !message) {
+        alert("Empty filed !")
+        return
+       }
         try {
             const res = await axios.post('http://localhost:4040/api/v1/auth/register',{name, email,message});
             
             if(res && res.data.success) {
-                toast.success(res.data && res.data.message);
+                alert("Email send Successfully");
                 setName("")
                 setEmail("")
                 setMessage("") 
             }else {
-                toast.error(res.data.message);
+                alert("Failed to send Email");
             }
         } catch (error) {
             console.log(error);
