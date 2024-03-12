@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
@@ -29,9 +29,16 @@ const Contact = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [phone, setPhone] = useState('')
+  const [isTech, setTech] = useState(false)
+  const [showServices,setShowServices]=useState(false)
+
+  const [services, setServices] = useState({Technology:"",Marketing:"",Legal:""})
 
   const isInView = useInView(ref, { margin: "-100px" });
 
+  useEffect(()=>{
+  },[services])
 
    const handleSubmit = async (e) => {
        e.preventDefault();
@@ -76,6 +83,22 @@ const Contact = () => {
       );
   };
 
+
+  //handel services
+
+  function handelServices(e,name){
+    setTech(!isTech)
+    console.log(e.target.checked)
+    if(e.target.checked){
+      setServices({...services,[e.target.name]:e.target.value})
+      console.log("true")
+    }else{
+      setServices({...services,[e.target.name]:""})
+      console.log("fasle")
+      
+    }
+  }
+
   return (
     <motion.div
       ref={ref}
@@ -88,16 +111,13 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>corazortechnology@gmail.com</span>
+          <h4>contactus@corazor.com</h4>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Saharanpur, Uttar Pradesh, India</span>
+          <img style={{height:30,width:30}} src="whatsapp.png"/>
+          <h4>+91 7454996552</h4>
         </motion.div>
-        <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+91 7060588586</span>
-        </motion.div>
+        
       </motion.div>
       <div className="formContainer">
         <motion.div
@@ -138,6 +158,40 @@ const Contact = () => {
         >
           <input type="text" required placeholder="Name" name="name" value={name} onChange={(e)=>setName(e.target.value)}/>
           <input type="email" required placeholder="Email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+          <input type="number" required placeholder="Phone Number" name="Phone" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
+          <div onClick={()=>setShowServices(!showServices)}>Services</div>
+          {
+            showServices=="true"?
+            <>
+            <input
+            type="checkbox"
+            name="Technology"
+            value={"IT Solutions in your pocket ( web development, App Developement, Artificial, Intelligence Blockchain)"}
+            checked={isTech}
+            onChange={(e)=>{
+             handelServices(e,e.target.name)
+            }}
+          />
+          <input
+            type="checkbox"
+            name="Marketing"
+            value={"Marketing in your pocket"}
+            // checked={isTech}
+            onChange={(e)=>{
+             handelServices(e,e.target.name)
+            }}
+          />
+          <input
+            type="checkbox"
+            name="Legal"
+            value={"Legal in your pocket"}
+            // checked={isTech}
+            onChange={(e)=>{
+             handelServices(e,e.target.name)
+            }}
+          /></>:""
+          }
+          
           <textarea rows={8} required placeholder="Message" name="message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
           <button onClick={(e) => handleSubmit(e)}>Submit</button>
           {error && "Error"}
