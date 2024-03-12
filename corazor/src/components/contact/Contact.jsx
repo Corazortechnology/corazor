@@ -25,42 +25,46 @@ const Contact = () => {
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
-  const [userData,setUserData]=useState({name:"",email:"",massage:""})
+  const [userData, setUserData] = useState({ name: "", email: "", massage: "" })
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [phone, setPhone] = useState('')
   const [isTech, setTech] = useState(false)
-  const [showServices,setShowServices]=useState(false)
+  const [showServices, setShowServices] = useState(false)
+  const [submitting, setsubmitting] = useState(false)
 
-  const [services, setServices] = useState({Technology:"",Marketing:"",Legal:""})
+  const [services, setServices] = useState({ Technology: "", Marketing: "", Legal: "" })
 
   const isInView = useInView(ref, { margin: "-100px" });
 
-  useEffect(()=>{
-  },[services])
+  useEffect(() => {
+  }, [services, showServices])
 
-   const handleSubmit = async (e) => {
-       e.preventDefault();
-       if(!name || !email || !message) {
-        alert("Empty filed !")
-        return
-       }
-        try {
-            const res = await axios.post('https://corazor-server.onrender.com/api/v1/auth/register',{name, email,message});
-            
-            if(res && res.data.success) {
-                alert("Email send Successfully");
-                setName("")
-                setEmail("")
-                setMessage("") 
-            }else {
-                alert("Failed to send Email");
-            }
-        } catch (error) {
-            console.log(error);
-        }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!name || !email || !message || (!services.Technology && !services.Marketing && !services.Legal)) {
+      alert("Empty filed !")
+      return
     }
+    try {
+      const res = await axios.post('https://corazor-server.onrender.com/api/v1/auth/register', {name, email, message,phone,services});
+      setsubmitting(true)
+      if (res && res.data.success) {
+        alert("Email send Successfully");
+        setName("")
+        setEmail("")
+        setMessage("")
+        setPhone("")
+        setsubmitting(false)
+        setServices({ Technology: "", Marketing: "", Legal: "" })
+      } else {
+        alert("Failed to send Email");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
 
 
   const sendEmail = (e) => {
@@ -86,18 +90,27 @@ const Contact = () => {
 
   //handel services
 
-  function handelServices(e,name){
+  function handelServices(e) {
     setTech(!isTech)
-    console.log(e.target.checked)
-    if(e.target.checked){
-      setServices({...services,[e.target.name]:e.target.value})
-      console.log("true")
-    }else{
-      setServices({...services,[e.target.name]:""})
-      console.log("fasle")
+   
+    if (e.target.checked) {
+      setServices({ ...services, [e.target.name]: e.target.value })
       
+    } else {
+      setServices({ ...services, [e.target.name]: "" })
+      
+
     }
   }
+
+  //toggel service
+
+  function toggelService() {
+    setShowServices(!showServices)
+   
+  }
+
+
 
   return (
     <motion.div
@@ -114,10 +127,10 @@ const Contact = () => {
           <h4>contactus@corazor.com</h4>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <img style={{height:30,width:30}} src="whatsapp.png"/>
+          <img style={{ height: 30, width: 30 }} src="whatsapp.png" />
           <h4>+91 7454996552</h4>
         </motion.div>
-        
+
       </motion.div>
       <div className="formContainer">
         <motion.div
@@ -156,43 +169,59 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name" value={name} onChange={(e)=>setName(e.target.value)}/>
-          <input type="email" required placeholder="Email" name="email" value={email} onChange={(e)=>setEmail(e.target.value)}/>
-          <input type="number" required placeholder="Phone Number" name="Phone" value={phone} onChange={(e)=>setPhone(e.target.value)}/>
-          <div onClick={()=>setShowServices(!showServices)}>Services</div>
+          <input type="text" required placeholder="Name" name="name" value={name} onChange={(e) => setName(e.target.value)} />
+          <input type="email" required placeholder="Email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input type="number" required placeholder="Phone Number" name="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
+          <div className="toggel_Switch" onClick={() => toggelService()}>Select services of your choice <span>🔽</span></div>
           {
-            showServices=="true"?
-            <>
-            <input
-            type="checkbox"
-            name="Technology"
-            value={"IT Solutions in your pocket ( web development, App Developement, Artificial, Intelligence Blockchain)"}
-            checked={isTech}
-            onChange={(e)=>{
-             handelServices(e,e.target.name)
-            }}
-          />
-          <input
-            type="checkbox"
-            name="Marketing"
-            value={"Marketing in your pocket"}
-            // checked={isTech}
-            onChange={(e)=>{
-             handelServices(e,e.target.name)
-            }}
-          />
-          <input
-            type="checkbox"
-            name="Legal"
-            value={"Legal in your pocket"}
-            // checked={isTech}
-            onChange={(e)=>{
-             handelServices(e,e.target.name)
-            }}
-          /></>:""
+            showServices == true ?
+              <div>
+                <div className="service">
+                  <input
+                    className="checkbox"
+                    type="checkbox"
+                    name="Technology"
+                    value={"IT Solutions in your pocket ( web development, App Developement, Artificial, Intelligence Blockchain)"}
+                    checked={services.Technology == "" ? false : true}
+                    onChange={(e) => {
+                      handelServices(e, e.target.name)
+                    }}
+                  />
+                  <span className="service_text">IT Solutions in your pocket ( web-development, App-Developement, AI, Blockchain) </span>
+                </div>
+
+                <div className="service">
+                  <input
+                    className="checkbox"
+                    type="checkbox"
+                    name="Marketing"
+                    value={"Marketing in your pocket"}
+                    checked={services.Marketing == "" ? false : true}
+                    onChange={(e) => {
+                      handelServices(e, e.target.name)
+                    }}
+                  />
+                  <span>Marketing in your pocket</span>
+                </div>
+
+                <div className="service">
+                  <input
+                    className="checkbox"
+                    type="checkbox"
+                    name="Legal"
+                    value={"Legal in your pocket"}
+                    checked={services.Legal == "" ? false : true}
+                    onChange={(e) => {
+                      handelServices(e, e.target.name)
+                    }}
+                  />
+                  <span>Legal in your pocket</span>
+                </div>
+
+              </div> : ""
           }
-          
-          <textarea rows={8} required placeholder="Message" name="message" value={message} onChange={(e)=>setMessage(e.target.value)}/>
+
+          <textarea rows={4} required placeholder="Message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} />
           <button onClick={(e) => handleSubmit(e)}>Submit</button>
           {error && "Error"}
           {success && "Success"}

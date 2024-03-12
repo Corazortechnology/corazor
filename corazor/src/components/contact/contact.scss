@@ -21,10 +21,10 @@
     gap: 40px;
 
     @include mobile {
-      gap: 20px;
+      gap: 5px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
+      // margin-top: 70px;
     }
 
     h1 {
@@ -45,11 +45,12 @@
     flex: 1;
     position: relative;
     
+    
     @include mobile {
-      padding: 50px;
+      padding:10px 30px;
       width: 100%;
+      transform: translate(0,-80px);
     }
-
 
     .phoneSvg {
       stroke: orange;
@@ -62,7 +63,46 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
+      
+      .toggel_Switch{
+        cursor: pointer;
+       color: rgb(131, 128, 128);
+       border: white;
+       border: 1px solid white ;
+       border-radius: 5px;
+       padding: 10px;
+       min-width:110px;
+       font-size: 90%;
+       width: 50%;
+      }
 
+      .service{
+       color: rgb(255, 255, 255);
+       border: white;
+       border: 1px solid white ;
+       border-radius: 5px;
+       padding: 20px;
+       height:30px;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       margin-bottom: 5px;
+      }
+
+
+
+      .checkbox{
+      margin-right: 20px;
+      }
+
+      span{
+        color: gray;
+        font-size: 70%;
+      }
+       
+      input{
+        height:20
+      }
       input,
       textarea {
         padding: 20px;
@@ -72,7 +112,7 @@
         border-radius: 5px;
 
         @include mobile {
-          padding: 10px;
+          padding: 5px;
         }
       }
 

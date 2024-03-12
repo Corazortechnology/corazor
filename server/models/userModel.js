@@ -12,9 +12,15 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: false
     },
+    phone:{
+        type: Number,
+        required: true,
+        unique: false
+    },
 
     message:[{
         message: {type: String, required: true},
+        preferedServices:[{type: String, required: true}],
         createdAt: {type: Date, default: Date.now()}
     }],
     

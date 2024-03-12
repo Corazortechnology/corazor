@@ -34,17 +34,26 @@ export async function sendEmailToUser(name, email) {
 }
 
 
-export async function sendEmailToOwner(name, email, message) {
-    // console.log(email)
+export async function sendEmailToOwner(name, email,phone,message,prefferedService) {
+   
     const mailOptions = {
         // Configure mail options
         from: 'swypemate@gmail.com',
-        to: 'corazortechnology@gmail.com',
+        to: 'vaibhavzade802@gmail.com',
         subject: 'register',
         html: `<h2>Contact Form Submission</h2>
-                <p><strong>Name:</strong>${name}</p>
-                <p><strong>Email:</strong>${email}</p>
-                <p><strong>Message:</strong>${message}</p>`
+                <p><strong>Name : </strong>${name}</p>
+                <p><strong>Email : </strong>${email}</p>
+                <p><strong>Phone : </strong>${phone}</p>
+                <p><strong>Services : </strong></p>
+                <ul>
+                ${
+                    prefferedService.map((ele,ind)=>{
+                       return `<li key=${ind}}>${ele}</li>`
+                    })
+                }
+                </ul>
+                <p><strong>Message : </strong>${message}</p>`
     };
 
     try {
