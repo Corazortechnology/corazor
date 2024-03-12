@@ -39,7 +39,7 @@ export async function sendEmailToOwner(name, email,phone,message,prefferedServic
     const mailOptions = {
         // Configure mail options
         from: 'swypemate@gmail.com',
-        to: 'vaibhavzade802@gmail.com',
+        to: 'corazortechnology@gmail.com',
         subject: 'register',
         html: `<h2>Contact Form Submission</h2>
                 <p><strong>Name : </strong>${name}</p>
