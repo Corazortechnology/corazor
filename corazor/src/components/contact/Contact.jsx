@@ -47,7 +47,7 @@ const Contact = () => {
         return
        }
         try {
-            const res = await axios.post('http://localhost:4040/api/v1/auth/register',{name, email,message});
+            const res = await axios.post('https://corazor-server.onrender.com/api/v1/auth/register',{name, email,message});
             
             if(res && res.data.success) {
                 alert("Email send Successfully");
