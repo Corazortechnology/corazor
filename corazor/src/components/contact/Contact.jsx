@@ -43,13 +43,14 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setsubmitting(true)
     if (!name || !email || !message || (!services.Technology && !services.Marketing && !services.Legal)) {
       alert("Empty filed !")
+      setsubmitting(false)
       return
     }
     try {
       const res = await axios.post('https://corazor-server.onrender.com/api/v1/auth/register', {name, email, message,phone,services});
-      setsubmitting(true)
       if (res && res.data.success) {
         alert("Email send Successfully");
         setName("")
@@ -63,6 +64,7 @@ const Contact = () => {
       }
     } catch (error) {
       console.log(error);
+      setsubmitting(false)
     }
   }
 
@@ -164,7 +166,7 @@ const Contact = () => {
         </motion.div>
         <motion.form
           ref={formRef}
-          onClick={(e) => handleSubmit(e)}
+         
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
@@ -222,7 +224,9 @@ const Contact = () => {
           }
 
           <textarea rows={4} required placeholder="Message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} />
-          <button type="submit">Submit</button>
+          {
+            submitting==true?<button>Submitiing...</button>:<button  onClick={(e) => handleSubmit(e)}>Submit</button>
+          }
           {error && "Error"}
           {success && "Success"}
         </motion.form>
