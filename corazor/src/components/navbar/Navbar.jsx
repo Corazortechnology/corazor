@@ -7,16 +7,17 @@ const Navbar = () => {
     <div className="navbar">
       {/* Sidebar */}
       <Sidebar/>
-      <div className="wrapper">
+      <div className="wrapper"> 
         <motion.span
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          style={{fontSize:20,fontWeight:600,marginLeft:"10vw"}}
+          style={{fontSize:30,fontWeight:600,marginLeft:"5vw"}}
         >
-          Corazor
+          Corazor Technology
         </motion.span>
-        <div className="social">
+        
+        {/* <div className="social">
           <a href="#">
             <img src="/facebook.png" alt="" />
           </a>
@@ -29,7 +30,7 @@ const Navbar = () => {
           <a href="#">
             <img src="/dribbble.png" alt="" />
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
