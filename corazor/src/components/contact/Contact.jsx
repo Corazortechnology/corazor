@@ -164,7 +164,7 @@ const Contact = () => {
         </motion.div>
         <motion.form
           ref={formRef}
-          // onSubmit={(e) => handleSubmit(e)}
+          onClick={(e) => handleSubmit(e)}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
@@ -222,7 +222,7 @@ const Contact = () => {
           }
 
           <textarea rows={4} required placeholder="Message" name="message" value={message} onChange={(e) => setMessage(e.target.value)} />
-          <button onClick={(e) => handleSubmit(e)}>Submit</button>
+          <button type="submit">Submit</button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>
