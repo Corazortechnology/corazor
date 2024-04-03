@@ -1,38 +1,54 @@
-import Test from "./Test";
-import "./app.scss";
-import Contact from "./components/contact/Contact";
-import Cursor from "./components/cursor/Cursor";
-import Hero from "./components/hero/Hero";
-import Navbar from "./components/navbar/Navbar";
-import Parallax from "./components/parallax/Parallax";
-import Portfolio from "./components/portfolio/Portfolio";
-import Services from "./components/services/Services";
+import React from 'react'
+import { 
+  Billing, 
+  Business, 
+  CardDeal, 
+  Clients, 
+  CTA, 
+  Footer, 
+  Hero, 
+  Navbar, 
+  Stats, 
+  Testimonials 
+} from './components'
+import Form from './components/Form'
+import styles from './style'
+import Technology from './components/Technologies'
+import Projcets from './components/Projcets'
 
 const App = () => {
   return (
-    <div>
-      <section id="Homepage">
-        <Navbar />
-        <Hero />
-      </section>
-      <section id="Services">
-        <Parallax type="services" />
-      </section>
-      <section>
-        <Services />
-      </section>
-      {/* <section id="Portfolio">
-        <Parallax type="portfolio" />
-      </section> */}
-      <Portfolio />
-      <section id="Contact">
-        <Contact />
-      </section>
-      {/* Framer Motion Crash Course */}
-      {/* <Test/>
-    <Test/> */}
+    <React.StrictMode>
+    <div className='bg-primary w-full overflow-hidden'>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Navbar/>
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Hero/>      
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Stats/>
+          <Business/>
+          <Billing/>
+          <CardDeal/>
+          <Technology/>
+          <Projcets/>
+          <Testimonials/>
+          <Clients/>
+          <CTA/>
+          <Form/>
+          
+          <Footer/>       
+        </div>
+      </div>
     </div>
-  );
-};
+    </React.StrictMode>
+  )
+}
 
-export default App;
+export default App
