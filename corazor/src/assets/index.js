@@ -30,7 +30,7 @@ import idea from "./ideafree.svg"
 import reacticon from "./react.png";
 import nodeLogo from "./nodejslogo.png"
 import DockerLogo from "./Docker.png"
-import Kubernetes from "./Kubernetes.png"
+import Kubernetes from "./kubernetes.png"
 import awslogo from "./AWS.png"
 import angluar from "./Anglular.png"
 import contact from "./contactus.svg"
