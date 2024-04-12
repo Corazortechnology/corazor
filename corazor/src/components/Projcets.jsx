@@ -9,97 +9,98 @@ import styles, { layout } from '../style';
 
 
 const projectData = [
-    {
-      id: 1,
-      name: 'Cloud Resource Manager',
-      description: 'Manage and monitor cloud resources efficiently with real-time analytics and cost-saving recommendations.',
-      techStack: 'MERN',
-    },
-    {
-      id: 2,
-      name: 'Next-Gen E-Commerce Suite',
-      description: 'A full-featured e-commerce solution with advanced analytics, personalized shopping experiences, and seamless payment integration.',
-      techStack: 'MERN',
-    },
-    {
-      id: 3,
-      name: 'Healthcare Companion App',
-      description: 'A personal healthcare assistant offering symptom tracking, medication reminders, and telehealth consultations.',
-      techStack: 'Flutter',
-    },
-    {
-      id: 4,
-      name: 'Investment and Trading Platform',
-      description: 'Real-time stock and cryptocurrency trading platform with automated portfolio management and predictive analytics.',
-      techStack: 'MERN',
-    },
-    {
-      id: 5,
-      name: 'Collaborative Project Management Tool',
-      description: 'Streamline team projects with task assignments, progress tracking, and integrated communication tools.',
-      techStack: 'VueJS',
-    },
-    {
-      id: 6,
-      name: 'Interactive Learning Platform',
-      description: 'An educational platform offering personalized learning paths, interactive content, and community-driven knowledge sharing.',
-      techStack: 'Django',
-    },
-    {
-      id: 7,
-      name: 'AI-Driven Marketing Insights',
-      description: 'Harness the power of AI to analyze marketing data, predict trends, and optimize campaign strategies in real-time.',
-      techStack: 'Flask',
-    },
-    {
-      id: 8,
-      name: 'Smart Home Ecosystem',
-      description: 'An integrated smart home management system for controlling IoT devices through a single, user-friendly interface.',
-      techStack: 'IoT',
-    },
-    {
-      id: 9,
-      name: 'Augmented Reality Interior Designer',
-      description: 'Visualize furniture and decor in your space with an augmented reality app, simplifying home decoration.',
-      techStack: 'ARKit',
-    },
-    {
-      id: 10,
-      name: 'Blockchain-Based Voting System',
-      description: 'A secure, transparent voting system utilizing blockchain technology to ensure integrity and anonymity.',
-      techStack: 'Solidity',
-    },
-    {
-      id: 11,
-      name: 'Freelance Marketplace',
-      description: 'Connect freelancers with projects matching their skills, featuring an escrow payment system and performance ratings.',
-      techStack: 'MERN',
-    },
-    {
-      id: 12,
-      name: 'Subscription Box Service Platform',
-      description: 'A platform for managing subscription box services, including customer preferences, subscription tiers, and logistics.',
-      techStack: 'MERN',
-    },
-    {
-      id: 13,
-      name: 'Event Planning and Ticketing Portal',
-      description: 'An all-in-one platform for event planning, ticket sales, attendee management, and engagement analytics.',
-      techStack: 'MERN',
-    },
-    {
-      id: 14,
-      name: 'Custom Apparel Design Tool',
-      description: 'Design custom apparel with an online tool that allows users to visualize their creations before ordering.',
-      techStack: 'React',
-    },
-    {
-      id: 15,
-      name: 'Content Management System',
-      description: 'A flexible CMS for creating, managing, and optimizing digital content across multiple channels.',
-      techStack: 'Django',
-    },
-  ];
+  {
+    id: 1,
+    name: 'WebDev Cloud Manager',
+    description: 'Optimize cloud usage with actionable insights.',
+    techStack: 'Webdevelopment',
+  },
+  {
+    id: 2,
+    name: 'E-Commerce Revolution',
+    description: 'Transforming online shopping with cutting-edge tech.',
+    techStack: 'Webdevelopment',
+  },
+  {
+    id: 3,
+    name: 'Health Tracker',
+    description: 'Your health, monitored and cared for digitally.',
+    techStack: 'APP Development',
+  },
+  {
+    id: 4,
+    name: 'Stocks & Crypto Exchange',
+    description: 'Trade with intelligence and speed.',
+    techStack: 'Webdevelopment',
+  },
+  {
+    id: 5,
+    name: 'AI Project Manager',
+    description: 'AI-driven insights to push projects forward.',
+    techStack: 'Artificial Intelligance',
+  },
+  {
+    id: 6,
+    name: 'Learn AI',
+    description: 'Personalized education in the age of AI.',
+    techStack: 'Artificial Intelligance',
+  },
+  {
+    id: 7,
+    name: 'AI Marketing Genius',
+    description: 'Redefining marketing strategies with AI.',
+    techStack: 'Artificial Intelligance',
+  },
+  {
+    id: 8,
+    name: 'Smart Home Integrator',
+    description: 'Unify your home devices under a single system.',
+    techStack: 'Artificial Intelligance',
+  },
+  {
+    id: 9,
+    name: 'AR Home Stylist',
+    description: 'See your design choices in your space instantly.',
+    techStack: 'Artificial Intelligance',
+  },
+  {
+    id: 10,
+    name: 'SecureVote Blockchain',
+    description: 'The future of fair and transparent elections.',
+    techStack: 'Artificial Intelligance',
+  },
+  {
+    id: 11,
+    name: 'Freelancer Connect',
+    description: 'Where talent meets opportunity.',
+    techStack: 'Webdevelopment',
+  },
+  {
+    id: 12,
+    name: 'Subscription Hub',
+    description: 'Manage and discover subscription services easily.',
+    techStack: 'Webdevelopment',
+  },
+  {
+    id: 13,
+    name: 'Eventify Platform',
+    description: 'Your go-to solution for event management and ticketing.',
+    techStack: 'Webdevelopment',
+  },
+  {
+    id: 14,
+    name: 'FashionForge Designer',
+    description: 'Craft your unique apparel digitally.',
+    techStack: 'Artificial Intelligance',
+  },
+  {
+    id: 15,
+    name: 'ContentSphere CMS',
+    description: 'Empowering creators to manage content seamlessly.',
+    techStack: 'Artificial Intelligance',
+  },
+];
+
   
       
 

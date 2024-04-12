@@ -10,7 +10,7 @@ const CardDeal = () => {
   const { ref, inView } = useInView({
     
     triggerOnce: true, // Trigger animation only once
-    threshold: 0.8, // Trigger when 40% of the element is in the viewport
+    threshold: 0.4, // Trigger when 40% of the element is in the viewport
   });
   return (
     <section  ref={ref}className={layout.section}>

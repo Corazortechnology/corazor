@@ -44,7 +44,7 @@ const Technology = () => {
           name: "Angluar",
           description: "A complete Front-end framework ",
           img: angluar,
-        },
+        }, 
        
       ];
       const scrollControls = useAnimation();
@@ -70,7 +70,7 @@ const Technology = () => {
               <div className="flex mt-10 w-full overflow-x-auto sm:flex overflow-y-auto ">
                   <motion.div className={`${layout.sectionImg} flex space-x-4 min-w-max ] `} initial={{ x: '0%' }} animate={scrollControls}>
                       {technologies.map((tech, index) => (
-                          <div key={tech.id} className="flex-shrink-0 flex flex-col items-center text-center w-full xl:w-[350px] lg:w-[300px] sm:w-[320px] ss:w-[320px] xs:w-[320px] md:w-1/4 lg:w-48">
+                          <div key={tech.id} className="flex-shrink-0 flex flex-col items-center text-center w-full xl:w-[340px] lg:w-[300px] sm:w-[320px] ss:w-[320px] xs:w-[320px] md:w-1/4 ">
                               <div className="p-4 bg-gray-800 rounded-lg md:p-3 w-[300px]">
                                   <img src={tech.img} alt={tech.name} className='w-24 h-24 object-contain mx-auto' />
                                   <h3 className="mt-4 text-lg text-white font-semibold">{tech.name}</h3>

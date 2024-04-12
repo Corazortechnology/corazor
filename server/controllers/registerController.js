@@ -7,6 +7,7 @@ const registerController = async (req, res) => {
 
     try {
         const { name, email, message, phone, services } = req.body;
+        console.log( name, email, message, phone, services)
         
 
         let preferedServices = []

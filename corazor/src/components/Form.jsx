@@ -103,7 +103,7 @@ const Form = () => {
                 ))}
                 </select>
           </div>
-          <button type="submit" className={`${styles.button} submitButton`} disabled={submitting}>
+          <button type="submit" className={`${styles.button} submitButton text-white`} disabled={submitting}>
             {submitting ? 'Sending...' : 'Submit'}
           </button>
         </form>
