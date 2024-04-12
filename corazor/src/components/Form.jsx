@@ -14,7 +14,7 @@ const Form = () => {
   // Updated to store boolean values for checkbox states
   const [services, setServices] = useState({
     
-    " ":" ",
+    "Select  Technology":"select ",
     Technology: false,
     
 
@@ -48,7 +48,8 @@ const Form = () => {
     };
 
     try {
-      const res = await axios.post('https://corazor-server.onrender.com/api/v1/auth/registe', formData);
+      console.log(formData)
+      const res = await axios.post('https://corazor-server.onrender.com/api/v1/auth/register', formData);
 
       if (res.data.success) {
         toast.success("Message sent successfully.");
@@ -103,7 +104,7 @@ const Form = () => {
                 ))}
                 </select>
           </div>
-          <button type="submit" className={`${styles.button} submitButton text-white`} disabled={submitting}>
+          <button type="submit" className={`${styles.button} font-semibold submitButton text-white border p-3  hover:bg-white hover:text-black `} disabled={submitting}>
             {submitting ? 'Sending...' : 'Submit'}
           </button>
         </form>

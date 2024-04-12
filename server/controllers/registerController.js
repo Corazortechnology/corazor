@@ -6,40 +6,44 @@ import { sendEmailToUser, sendEmailToOwner } from '../services/emailService.js';
 const registerController = async (req, res) => {
 
     try {
+        console.log("______registerController____")
         const { name, email, message, phone, services } = req.body;
+        console.log("req.body",req.body)
         console.log( name, email, message, phone, services)
         
 
         let preferedServices = []
-        if (services.Technology !== "") {
-            preferedServices.push(services.Technology)
-            if (services.Marketing !== "") {
-                preferedServices.push(services.Marketing)
-                if (services.Legal !== "") {
-                    preferedServices.push(services.Legal)
-                }
-            } else {
-                if (services.Legal !== "") {
-                    preferedServices.push(services.Legal)
-                }
-            }
+        // if (services.Technology !== "") {
+        //     preferedServices.push(services.Technology)
+        //     if (services.Marketing !== "") {
+        //         preferedServices.push(services.Marketing)
+        //         if (services.Legal !== "") {
+        //             preferedServices.push(services.Legal)
+        //         }
+        //     } else {
+        //         if (services.Legal !== "") {
+        //             preferedServices.push(services.Legal)
+        //         }
+        //     }
+            console.log(preferedServices)
 
-        } else {
-            if (services.Marketing !== "") {
-                preferedServices.push(services.Marketing)
-                if (services.Legal !== "") {
-                    preferedServices.push(services.Legal)
-                }
-            } else {
-                if (services.Legal !== "") {
-                    preferedServices.push(services.Legal)
-                }
-            }
-        }
+        // } else {
+            // if (services.Marketing !== "") {
+            //     preferedServices.push(services.Marketing)
+            //     if (services.Legal !== "") {
+            //         preferedServices.push(services.Legal)
+            //     }
+            // } else {
+            //     if (services.Legal !== "") {
+            //         preferedServices.push(services.Legal)
+            //     }
+            // }
+        // }
 
       
         // Check if the user already exists
         let existingUser = await UserModel.findOne({ email });
+        console.log(existingUser)
 
         if (existingUser) {
             // User exists, update the message
