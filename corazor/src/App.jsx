@@ -38,8 +38,8 @@ const App = () => {
           <CardDeal/>
           <Technology/>
           <Projcets/>
-          <Testimonials/>
-          <Clients/>
+          {/* <Testimonials/> */}
+          {/* <Clients/> */}
           <CTA/>
           <Form/>
           
