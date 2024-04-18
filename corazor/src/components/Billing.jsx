@@ -16,7 +16,7 @@ const Billing = () => {
 
 
   return (
-    <section id='product' ref={ref} className={layout.sectionReverse}>
+    <section id='About' ref={ref} className={layout.sectionReverse}>
     <motion.div
       initial={{ x: -400 }}
       animate={inView ? { x: 0 } : {}}

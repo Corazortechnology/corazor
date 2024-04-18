@@ -24,14 +24,19 @@ export const navLinks = [
     id: "features",
     title: "Features",
   },
-  {
-    id: "product",
-    title: "Services",
-  },
-  {
-    id: "clients",
-    title: "Clients",
-  },
+ {
+  id:"About",
+  title:"About"
+ },
+ {
+  id:"Contact Us",
+  title:"Contact Us"
+ },
+
+{
+  id:"Swipemate",
+  title:"Product"
+}
 ];
 
 

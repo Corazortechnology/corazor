@@ -78,7 +78,7 @@ const Form = () => {
   };
 
   return (
-    <section ref={ref} className={layout.section}>
+    <section ref={ref} id="Contact Us" className={layout.section}>
       <motion.div
         initial={{ x: -100 }}
         animate={inView ? { x: 0 } : {}}

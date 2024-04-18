@@ -2,6 +2,7 @@ import styles from '../style'
 import { discount, robot,hero } from '../assets'
 import GetStarted from './GetStarted'
 import { motion,AnimatePresence  } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 
 const Hero = () => {
@@ -37,6 +38,14 @@ At the Heart of Innovation, We Engineer Your Vision.
 Tailored Management Systems Designed to Propel Your Business Forward.
 Experience the Future of Efficiency with Our Expert Team."
         </p>
+         <Link >
+         
+        <button className='mt-5 bg-secondary font-bold  text-black p-3 border rounded-lg'>
+        Swipemate
+        </button>
+         </Link>
+
+
       </div>
       <motion.div 
       initial={{y:+100}}

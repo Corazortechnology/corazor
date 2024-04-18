@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
@@ -37,10 +37,12 @@ const Navbar = () => {
               >
                 <a href={`#${nav.id}`}>
                   {nav.title}
-                </a>
+                </a>    
               </li>        
             ))}
+            {/* <li>Swipemate</li> */}
           </ul>
+         
         </div>
       </div>
     </nav>
