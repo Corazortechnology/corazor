@@ -29,7 +29,7 @@ const App = () => {
             </div>
           </div>
           <Routes>
-            <Route path="/" element={<Hero />} />
+            {/* <Route path="/" element={<Hero />} /> */}
             {/* <Route path="/swipemate" element={<Swypemate />} /> */}
             {/* Other routes can also be added here if needed */}
           </Routes>
