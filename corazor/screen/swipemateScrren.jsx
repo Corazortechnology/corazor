@@ -8,7 +8,7 @@
       <>
 <div className="col-white">
 
-helliknasd
+
 
 
 </div>
