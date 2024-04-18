@@ -6,13 +6,13 @@
  function Swypemate() {
     return (
       <>
-<div className="col-white">
-
+<div className="col-white h-[500px] w-[500px] bg-slate-600">
+  hi
 
 
 
 </div>
-      hiii
+      
 {/*      
         <Navbar />
         <Hero />

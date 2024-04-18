@@ -61,8 +61,14 @@ const Technology = () => {
   
       return (
           <section className={`${layout.section}  `}>
-              <div className={`${layout.sectionInfo}  `}>
-                  <h2 className={`${styles.heading2} leading-2 `}>Our Technologies The Tools That Empower Us</h2>
+              <div className={`${layout.sectionInfo} mr-[10%]   `}>
+                  <h2 className={`${styles.heading2} leading-2 `}>Our <span className='text-gradient'>
+                    
+                  Technologies
+                    </span>  The Tools That <span className='text-gradient'>   
+                    
+                  Empower Us
+                    </span></h2>
                   <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
                       Dive into the stack of technologies that drive our solutions. From front-end frameworks to back-end languages and deployment tools, explore the technologies we use to build innovative software.
                   </p>

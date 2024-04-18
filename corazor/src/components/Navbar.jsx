@@ -10,10 +10,10 @@ const Navbar = () => {
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
       <div
-      className='w-[5.2%] '
+      
       > 
       <img 
-      className="bg-transparent border-none p-0 m-0 object-cover" 
+      className="bg-transparent drop-shadow-2xl mt-2 w-[25%]  p-0 m-0 object-contain" 
       src={corazor} alt="" />
 
 

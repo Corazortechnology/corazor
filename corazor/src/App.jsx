@@ -30,12 +30,12 @@ const App = () => {
           </div>
           <Routes>
             <Route path="/" element={<Hero />} />
-            <Route path="/swipemate" element={<Swypemate />} />
+            {/* <Route path="/swipemate" element={<Swypemate />} /> */}
             {/* Other routes can also be added here if needed */}
           </Routes>
           <div className={`bg-primary ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
-              <Hero />
+              <Hero />  
             </div>
           </div>
           <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
