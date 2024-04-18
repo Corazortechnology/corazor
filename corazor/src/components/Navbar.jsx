@@ -2,13 +2,23 @@ import React, { useState } from 'react'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
 import { Link } from 'react-router-dom'
+import corazor from "../assets/corazorLogo.jpeg"
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <h3  className='w-[300px] p-[2px] h-[32px] text-[25px] font-poppins font-normal font-bold text-white'>Corazor <span className='text-gradient'>  Technology</span> </h3>
+      <div
+      className='w-[5.2%] '
+      > 
+      <img 
+      className="bg-transparent border-none p-0 m-0 object-cover" 
+      src={corazor} alt="" />
+
+
+      </div>
+      {/* <h3  className='w-[300px] p-[2px] h-[32px] text-[25px] font-poppins font-normal font-bold text-white'>Corazor <span className='text-gradient'>  Technology</span> </h3> */}
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, i) => (
           <li 

@@ -14,6 +14,7 @@ import {
   shield, 
   star
 } from "../assets";
+import { Link } from "react-router-dom";
 
 export const navLinks = [
   {
