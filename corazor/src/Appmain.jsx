@@ -17,36 +17,18 @@ import styles from './style';
 import Technology from './components/Technologies';
 import Projcets from './components/Projcets';
 // import Swypemate from '../screen/swipemateScrren';
-import Mainapp from './Appmain';
-import Swypemate from '../screen/swipemateScrren';
-// import Swypemate from "../screen/swpiemate/src/App"
-
-
-
-const App = () => {
+const Mainapp = () => {
   return (
     <React.StrictMode>
-      <Router>
-
-        <Routes>
-        <Route path="/" element={<Mainapp />} />
-        <Route path="/swipemate" element={<Swypemate />} />
-      
-
-
-        </Routes>
-        {/* <div className='bg-primary w-full overflow-hidden'>
+     
+        <div className='bg-primary w-full overflow-hidden'>
           <div className={`${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
               <Navbar />
              
             </div>
           </div>
-          <Routes> */}
-            {/* <Route path="/" element={<Hero />} /> */}
-            {/* <Route path="/swipemate" element={<Swypemate />} /> */}
-            {/* Other routes can also be added here if needed */}
-          {/* </Routes>
+          
           <div className={`bg-primary ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Hero />  
@@ -59,18 +41,18 @@ const App = () => {
               <Billing />
               <CardDeal />
               <Technology />
-              <Projcets /> */}
+              <Projcets />
               {/* <Testimonials /> Uncomment if needed */}
               {/* <Clients /> Uncomment if needed */}
-              {/* <CTA />
+              <CTA />
               <Form />
-              <Footer /> */}
-            {/* </div>
+              <Footer />
+            </div>
           </div>
-        </div> */}
-      </Router>
+        </div>
+     
     </React.StrictMode>
   );
 };
 
-export default App;
+export default Mainapp;
