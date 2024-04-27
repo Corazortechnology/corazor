@@ -25,7 +25,7 @@ const CardDeal = () => {
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Dive into the world of custom software development where innovation meets efficiency. From strategy through to execution, our team ensures your project is handled with expertise, delivering bespoke solutions that fit your unique needs perfectly. Let’s code the future, one line at a time.
       </p>
-      <Button styles='mt-10'/>
+      {/* <Button styles='mt-10'/> */}
     </motion.div>
     <motion.div
      

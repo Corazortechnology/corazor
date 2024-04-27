@@ -41,7 +41,7 @@ const Billing = () => {
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Empower your business with tailored software solutions that enhance productivity and efficiency. Our expert developers integrate cutting-edge technologies to create systems that perfectly align with your operational needs, driving growth and innovation.
       </p>
-      <div className='flex flex-row flex-wrap sm:mt-10 mt-6'>
+      {/* <div className='flex flex-row flex-wrap sm:mt-10 mt-6'>
         <img
           src={apple}
           alt='app-store'
@@ -52,7 +52,7 @@ const Billing = () => {
           alt='google-play'
           className='w-[128px] h-[42px] object-contain cursor-pointer'
         />
-      </div>
+      </div> */}
     </motion.div>
   </section>
 );

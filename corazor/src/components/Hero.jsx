@@ -39,10 +39,12 @@ Tailored Management Systems Designed to Propel Your Business Forward.
 Experience the Future of Efficiency with Our Expert Team."
         </p>
          <Link >
+
          
+{/*          
         <button className='mt-5 bg-secondary font-bold  text-black p-3 border rounded-lg'>
-        Swipemate
-        </button>
+           Our Products
+        </button> */}
          </Link>
 
 

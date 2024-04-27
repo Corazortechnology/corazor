@@ -33,7 +33,7 @@ const Business = () => {
       From concept to deployment, our team ensures your software not only meets but exceeds expectations,
       leveraging the latest technologies to drive innovation and efficiency.
         </p>
-        <Button styles='mt-10'/>
+        {/* <Button styles='mt-10'/> */}
       </div>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (

@@ -20,23 +20,28 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
+    route:""
   },
   {
     id: "features",
     title: "Features",
+    route:""
   },
  {
   id:"About",
-  title:"About"
+  title:"About",
+  route:""
  },
  {
   id:"Contact Us",
-  title:"Contact Us"
+  title:"Contact Us",
+  route:""
  },
 
 {
   id:"Swipemate",
-  title:"Product"
+  title:"Product",
+  route:"https://www.swypemate.com/"
 }
 ];
 
