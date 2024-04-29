@@ -17,7 +17,7 @@ import styles from './style';
 import Technology from './components/Technologies';
 import Projcets from './components/Projcets';
 // import Swypemate from '../screen/swipemateScrren';
-const Mainapp = () => {
+const   Mainapp = () => {
   return (
     <React.StrictMode>
      

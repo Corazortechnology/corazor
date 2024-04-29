@@ -1,9 +1,13 @@
 // import React from 'react'
-import { card,idea,reacticon,nodeLogo,DockerLogo,Kubernetes,awslogo,angluar } from '../assets'
+import { card,idea,reacticon,nodeLogo,DockerLogo,Kubernetes,awslogo,angluar,flutterpng,hardhat,
+  solidity,native,thirdweb,express,ALML,Typescript,Web3
+
+} from '../assets'
 import Button from './Button'
 import React, { useEffect, useRef } from 'react';
 import styles, { layout } from '../style'
 import { motion, useAnimation } from 'framer-motion';
+import datascience from "../assets/datascience.jpg"
 
 
 const Technology = () => {
@@ -21,18 +25,18 @@ const Technology = () => {
           description: "A JavaScript runtime built on Chrome's V8 JavaScript engine.",
           img: nodeLogo,
         },
-        {
-          id: "tech-3",
-          name: "Docker",
-          description: "A set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
-          img: DockerLogo,
-        },
-        {
-          id: "tech-4",
-          name: "Kubernetes",
-          description: "An open-source system for automating deployment, scaling, and management of containerized applications.",
-          img: Kubernetes,
-        },
+        // {
+        //   id: "tech-3",
+        //   name: "Docker",
+        //   description: "A set of platform as a service products that use OS-level virtualization to deliver software in packages called containers.",
+        //   img: DockerLogo,
+        // },
+        // {
+        //   id: "tech-4",
+        //   name: "Kubernetes",
+        //   description: "An open-source system for automating deployment, scaling, and management of containerized applications.",
+        //   img: Kubernetes,
+        // },
         {
           id: "tech-5",
           name: "AWS",
@@ -45,6 +49,45 @@ const Technology = () => {
           description: "A complete Front-end framework ",
           img: angluar,
         }, 
+        {
+          id: "tech-7",
+          name: "Solidity",
+          description: "Smart contract programming language.",
+          img: solidity,
+        }, 
+        {
+          id: "tech-8",
+          name: "ALML",
+          description: "Advanced machine learning library.",
+          img: ALML,
+        }, 
+        
+        {
+          id: "tech-9",
+          name: "Datascience",
+          description: "Statistical and computational analysis.",
+          img: datascience,
+        }, 
+        {
+          id: "tech-10",
+          name: "Thirdweb",
+          description: "Web3 app development toolkit.",
+          img: thirdweb,
+        }, 
+        {
+          id: "tech-11",
+          name: "Typescript",
+          description: "JavaScript with types enhancement.",
+          img: Typescript,
+        }, 
+        
+        {
+          id: "tech-11",
+          name: "Web3",
+          description: "Decentralized web technologies.",
+          img: Web3,
+        }, 
+        
        
       ];
       const scrollControls = useAnimation();

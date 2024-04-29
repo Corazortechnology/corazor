@@ -99,7 +99,30 @@ const projectData = [
     name: 'Crypto Asset Tracker',
     description: 'Track and manage your cryptocurrency assets in real-time.',
     techStack: 'Blockchain Projects',
+  },{
+    id: 17,
+    name: 'SmartMeds',
+    description: 'A blockchain-based medical application with multi-user functionality, securing medical data and facilitating appointments.',
+    techStack: 'Blockchain Projects',
   },
+  {
+    id: 18,
+    name: 'Supply Chain Management System',
+    description: 'A blockchain system managing communication between stakeholders in the food supply chain.',
+    techStack: 'Blockchain Projects',
+  },
+  {
+    id: 19,
+    name: 'Real Estate Dapp',
+    description: 'A blockchain-based real-estate management system offering virtual tours and secure property transactions.',
+    techStack: 'Blockchain Projects',
+  },
+  {
+    id: 20,
+    name: 'Certificate Management System',
+    description: 'An AI and blockchain-based system for secure storage and verification of certificates.',
+    techStack: 'Blockchain Projects',
+  }
 ];
 
 const Projects = () => {

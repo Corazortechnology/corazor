@@ -34,7 +34,29 @@ import Kubernetes from "./kubernetes.png"
 import awslogo from "./AWS.png"
 import angluar from "./Anglular.png"
 import contact from "./contactus.svg"
+import flutterpng from "./flutterpng.png"
+import hardhat from "./hardhat.jpg"
+import solidity from "./solidity.jpg"
+import native from "./native.jpg"
+import thirdweb from "./thirdweb.jpg"
+import express from "./express.jpg"
+import ALML from "./AIML.jpg"
+import datascience from "./datascience.jpg"
+import Typescript from "./typescript.jpg"
+// import thirdweb from "./thirdweb.jpg"
+import Web3 from "./web3.jpg"
 export {
+  Typescript,
+  Web3,
+  
+  datascience,
+  ALML,
+  express,
+  thirdweb,
+  native,
+  solidity,
+  hardhat,
+  flutterpng,
   angluar,
   contact,
   awslogo,
