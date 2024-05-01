@@ -42,7 +42,7 @@ import thirdweb from "./thirdweb.jpg";
 import express from "./express.jpg";
 import ALML from "./AIML.jpg";
 import datascience from "./datascience.jpg";
-import Typescript from "./typescript.png";
+import Typescript from "./Typescript.png";
 // import thirdweb from "./thirdweb.jpg";
 import Web3 from "./web3.jpg";
 import webDev from "./WebDev-Cloud-Manager.jpg";
