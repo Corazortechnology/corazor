@@ -19,6 +19,7 @@ import Projcets from './components/Projcets';
 // import Swypemate from '../screen/swipemateScrren';
 import Mainapp from './Appmain';
 import Swipemate from './components/swipemate/Swipemate';
+import "./components/app.scss"
 
 
 

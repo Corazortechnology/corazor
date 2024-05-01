@@ -94,7 +94,7 @@ const Technology = () => {
 
       useEffect(() => {
           const sequence = async () => {
-              await scrollControls.start({ x: '-100%', transition: { duration: 10, ease: "linear" } });
+              await scrollControls.start({ x: '-100%', transition: { duration: 25, ease: "linear" } });
               scrollControls.set({ x: '0%' });
               sequence();
           };
