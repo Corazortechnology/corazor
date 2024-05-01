@@ -1,13 +1,13 @@
 // import React from 'react'
 import { card,idea,reacticon,nodeLogo,DockerLogo,Kubernetes,awslogo,angluar,flutterpng,hardhat,
-  solidity,native,thirdweb,express,ALML,Typescript,Web3
+  solidity,native,thirdweb,express,ALML,tsx,Web3
 
 } from '../assets'
 import Button from './Button'
 import React, { useEffect, useRef } from 'react';
 import styles, { layout } from '../style'
 import { motion, useAnimation } from 'framer-motion';
-import datascience from "../assets/datascience.jpg"
+import dataScience from "../assets/dataScience.png"
 
 
 const Technology = () => {
@@ -57,7 +57,7 @@ const Technology = () => {
         }, 
         {
           id: "tech-8",
-          name: "ALML",
+          name: "AI-ML",
           description: "Advanced machine learning library.",
           img: ALML,
         }, 
@@ -66,7 +66,7 @@ const Technology = () => {
           id: "tech-9",
           name: "Datascience",
           description: "Statistical and computational analysis.",
-          img: datascience,
+          img: dataScience,
         }, 
         {
           id: "tech-10",
@@ -78,7 +78,7 @@ const Technology = () => {
           id: "tech-11",
           name: "Typescript",
           description: "JavaScript with types enhancement.",
-          img: Typescript,
+          img: tsx,
         }, 
         
         {

@@ -40,13 +40,13 @@ import solidity from "./solidity.jpg"
 import native from "./native.jpg"
 import thirdweb from "./thirdweb.jpg"
 import express from "./express.jpg"
-import ALML from "./AIML.jpg"
+import ALML from "./ALML.png"
 import datascience from "./datascience.jpg"
-import Typescript from "./typescript.jpg"
+import tsx from "./tsx.png"
 // import thirdweb from "./thirdweb.jpg"
 import Web3 from "./web3.jpg"
 export {
-  Typescript,
+  tsx,
   Web3,
   
   datascience,
