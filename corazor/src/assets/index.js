@@ -23,32 +23,72 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import hero from "./hero.svg"
+import hero from "./hero.svg";
 // import pipeline from "./Pipeline.svg"
-import pipeline from "./Pipeline.svg"
-import idea from "./ideafree.svg"
+import pipeline from "./Pipeline.svg";
+import idea from "./ideafree.svg";
 import reacticon from "./react.png";
-import nodeLogo from "./nodejslogo.png"
-import DockerLogo from "./Docker.png"
-import Kubernetes from "./kubernetes.png"
-import awslogo from "./AWS.png"
-import angluar from "./Anglular.png"
-import contact from "./contactus.svg"
-import flutterpng from "./flutterpng.png"
-import hardhat from "./hardhat.jpg"
-import solidity from "./solidity.jpg"
-import native from "./native.jpg"
-import thirdweb from "./thirdweb.jpg"
-import express from "./express.jpg"
-import ALML from "./ALML.png"
-import datascience from "./datascience.jpg"
-import tsx from "./tsx.png"
-// import thirdweb from "./thirdweb.jpg"
-import Web3 from "./web3.jpg"
+import nodeLogo from "./nodejslogo.png";
+import DockerLogo from "./Docker.png";
+import Kubernetes from "./kubernetes.png";
+import awslogo from "./awslogo.jpeg";
+import angluar from "./Anglular.png";
+import contact from "./contactus.svg";
+import flutterpng from "./flutterpng.png";
+import hardhat from "./hardhat.jpg";
+import solidity from "./solidity.jpg";
+import native from "./native.jpg";
+import thirdweb from "./thirdweb.jpg";
+import express from "./express.jpg";
+import ALML from "./ALML.png";
+import datascience from "./dataScience.png";
+import Typescript from "./tsx.png";
+// import thirdweb from "./thirdweb.jpg";
+import AWS from "./AWS.png"
+import Web3 from "./web3.png";
+import webDev from "./WebDev-Cloud-Manager.jpg";
+import ecommerce from "./ecommerce-trends.jpg";
+import helth from "./Health-Tracking-apps.jpg";
+import stocks from "./graph-crypto-currency-online-btc-stock-exchange.avif";
+import learn from "./is-ai-hard-to-learn-scaled.jpg";
+import AImarkating from "./marketing ai.jpeg";
+import AIproject from "./ai-project-management-1.png";
+import homeIntegration from "./home-integrator.jpg";
+import homeStylist from "./home-stylist.jpeg";
+import secureVote from "./secure-voting.jpeg";
+import freelancer from "./freelancer.webp";
+import hub from "./hub.png";
+import eventify from "./Hero-Eventify.png";
+import fashion from "./designer.jpeg";
+import contentSphare from "./contentSphere.jpeg";
+import cryptoAsset from "./crypto-asset-tracker.png";
+import smartMeds from "./medicine.jpeg";
+import supplychain from "./suplychain.webp";
+import realEstate from "./real-state.jpeg";
+import certificate from "./certificate.jpg";
 export {
-  tsx,
+  webDev,
+  ecommerce,
+  helth,
+  stocks,
+  learn,
+  AImarkating,
+  eventify,
+  AIproject,
+  homeIntegration,
+  homeStylist,
+  secureVote,
+  freelancer,
+  hub,
+  fashion,
+  contentSphare,
+  cryptoAsset,
+  smartMeds,
+  supplychain,
+  realEstate,
+  certificate,
+  Typescript,
   Web3,
-  
   datascience,
   ALML,
   express,
@@ -67,6 +107,7 @@ export {
   idea,
   pipeline,
   airbnb,
+  AWS,
   bill,
   binance,
   card,
@@ -91,5 +132,5 @@ export {
   people01,
   people02,
   people03,
-  hero
+  hero,
 };
