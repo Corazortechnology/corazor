@@ -19,6 +19,7 @@ import Projcets from './components/Projcets';
 // import Swypemate from '../screen/swipemateScrren';
 import Mainapp from './Appmain';
 import Swipemate from './components/swipemate/Swipemate';
+import Terms from './components/Terms';
 
 
 
@@ -32,6 +33,8 @@ const App = () => {
         <Route path="/" element={<Mainapp />} />
         
         <Route path="/swipemate" element={<Swipemate />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/policy" element={<Terms />} />
       
 
 
