@@ -1,0 +1,131 @@
+@import "./app.scss";
+
+.contact {
+  height: 100%;
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  @include mobile {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include mobile {
+      gap: 5px;
+      text-align: center;
+      align-items: center;
+      // margin-top: 70px;
+    }
+
+    h1 {
+      font-size: 100px;
+      line-height: 88px;
+
+      @include mobile {
+        font-size: 36px;
+      }
+    }
+
+    span {
+      font-weight: 300;
+    }
+  }
+
+  .formContainer {
+    flex: 1;
+    position: relative;
+    
+    
+    @include mobile {
+      padding:10px 30px;
+      width: 100%;
+      transform: translate(0,-80px);
+    }
+
+    .phoneSvg {
+      stroke: orange;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      
+      .toggel_Switch{
+        cursor: pointer;
+       color: rgb(131, 128, 128);
+       border: white;
+       border: 1px solid white ;
+       border-radius: 5px;
+       padding: 10px;
+       min-width:110px;
+       font-size: 90%;
+       width: 50%;
+      }
+
+      .service{
+       color: rgb(255, 255, 255);
+       border: white;
+       border: 1px solid white ;
+       border-radius: 5px;
+       padding: 20px;
+       height:30px;
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
+       margin-bottom: 5px;
+      }
+
+
+
+      .checkbox{
+      margin-right: 20px;
+      }
+
+      span{
+        color: gray;
+        font-size: 70%;
+      }
+       
+      input{
+        height:20
+      }
+      input,
+      textarea {
+        padding: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+
+        @include mobile {
+          padding: 5px;
+        }
+      }
+
+      button {
+        padding: 20px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 500;
+        @include mobile {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

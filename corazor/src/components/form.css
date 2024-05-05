@@ -1,0 +1,44 @@
+.input{
+    height: 40px;
+    padding: 15px;
+    /* padding-left: 10px; */
+    color: black;
+    outline: none;
+    border-radius: 5px;
+}
+
+.textarea{
+    padding: 15px;
+    padding-left: 10px;
+    color: black;
+    outline: none;
+    border-radius: 5px;
+}
+
+.service{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid gray;
+    padding:5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.toggel_Switch{
+    cursor:pointer
+}
+.checkbox{
+    margin-left: 10px;
+}
+.service_text{
+ margin-left: 20px;
+}
+.button{
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+  }

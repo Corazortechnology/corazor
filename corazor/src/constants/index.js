@@ -216,7 +216,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/company/corazor-technology-private-limited/",
+    link: "https://www.linkedin.com/company/corazor-technology-private-limited/posts/?feedView=all",
   },
 ];
 

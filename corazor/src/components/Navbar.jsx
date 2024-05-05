@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
 import { Link } from 'react-router-dom'
-import corazor from "../assets/corazorLogo.jpeg"
+import corazor from "../assets/corazor1.svg"
+
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
@@ -13,7 +14,7 @@ const Navbar = () => {
       
       > 
       <img 
-      className="bg-transparent drop-shadow-2xl mt-2 w-[25%]  p-0 m-0 object-contain" 
+      className="bg-transparent drop-shadow-2xl mt-2 w-[10%]  p-0 m-0 object-contain" 
       src={corazor} alt="" />
 
 
@@ -48,7 +49,7 @@ const Navbar = () => {
                 key={nav.id}
                 className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white mr-10`}
               >
-                <a href={`#${nav.id}`}>
+                <a href={`${nav.route}`}>
                   {nav.title}
                 </a>    
               </li>        

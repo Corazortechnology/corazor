@@ -26,11 +26,35 @@ const Footer = () => {
 
 
         </div>
-        <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10'>
+        <div className='flex-[1.5] w-full flex flex-row justify-end flex-wrap md:mt-0 mt-10'>
           {/* {footerLinks.map((link) => ( */}
             <div  className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
+            <div className=' flex  gap-2'>
 
-              <h4></h4>
+<Link
+to="/terms"
+>
+<button className='mt-5 bg-secondary font-bold  text-black p-3 border rounded-lg'>
+Terms and conditions 
+</button>
+{/* <h4 className=' cursor-pointer font-poppins font-medium text-[18px] leading-[27px] text-[#06d6a0] mr-2 mt-7'>
+    
+      </h4>  */}
+
+</Link>
+<Link
+to="/policy"
+>
+  <button className='mt-5 bg-secondary font-bold  text-black p-3 border rounded-lg'>
+  Refund Policy
+</button>
+
+      {/* <h4 className=' cursor-pointer font-poppins font-medium text-[18px] leading-[27px]  mt-7 text-[#06d6a0]'>
+      Refund Policy
+      </h4>   */}
+</Link>
+
+</div>
            
 {/*             
               {/* <ul className='list-none mt-4'>
@@ -46,44 +70,26 @@ const Footer = () => {
             </div>
           {/* ))} */}
         </div>
-        <Link
-        to="/terms"
-        >
-        
-        <h4 className=' cursor-pointer font-poppins font-medium text-[18px] leading-[27px] text-[#06d6a0] mr-2 mt-7'>
-              Terms and conditions 
-              </h4> 
-        
-        </Link>
-        <Link
-        to="/policy"
-        >
-        
-        
-              <h4 className=' cursor-pointer font-poppins font-medium text-[18px] leading-[27px]  mt-7 text-[#06d6a0]'>
-              Refund Policy
-              </h4>  
-        </Link>
+     
       </div>
 
       <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]'>
         <p className='font-poppins font-normal text-center text-[18px] leading-[27px] text-white'>
           2024 Corazor . All Rights Reserved.
         </p>  
+       
         <div className='flex flex-row md:mt-0 mt-6'>
 
       
           {socialMedia.map((social, index) => (
             <a href={social.link}>
-
-
             <img
               src={social.icon}
               key={social.id}
               alt={social.id}
               className={`w-[21px] h-[21px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'}`}
-              />
-              </a>
+            />
+            </a>
           ))}
           
         </div>   
