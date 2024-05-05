@@ -2,19 +2,19 @@ import React, { useState } from 'react'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants'
 import { Link } from 'react-router-dom'
-import corazor from "../assets/corazor1.svg"
+import corazor from "../assets/corazor2.svg"
 
 const Navbar = () => {
 
   const [toggle, setToggle] = useState(false)
 
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar'>
+    <nav className='w-full flex py-6  mb-[-8%]  justify-between items-center navbar'>
       <div
       
       > 
       <img 
-      className="bg-transparent drop-shadow-2xl mt-2 w-[10%]  p-0 m-0 object-contain" 
+      className="bg-transparent drop-shadow-2xl  w-[20%]  p-0 m-0 object-contain" 
       src={corazor} alt="" />
 
 

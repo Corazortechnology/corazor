@@ -13,7 +13,7 @@ const CardDeal = () => {
     threshold: 0.4, // Trigger when 40% of the element is in the viewport
   });
   return (
-    <section  ref={ref}className={layout.section}>
+    <section  ref={ref}className={`${layout.section}mt-[-2%] mb-[-10%]`}>
     <motion.div
     initial={{x:-300}}
     animate={inView ? { x: +30 } : {}}

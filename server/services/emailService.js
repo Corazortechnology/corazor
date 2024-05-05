@@ -15,7 +15,7 @@ export async function sendEmailToUser(name, email) {
     // console.log(email)
     const mailOptions = {
         // Configure mail options
-        from: 'swypemate@gmail.com',
+        from: 'corazortechnology@gmail.com',
         to: email,
         subject: 'register',
         text: `thanks ${name} for considering us. Our team will reach out to you shortly`
@@ -38,8 +38,8 @@ export async function sendEmailToOwner(name, email,phone,message,prefferedServic
    
     const mailOptions = {
         // Configure mail options
-        from: 'swypemate@gmail.com',
-        to: ' ritujainanant2810@gmail.com',
+        from: 'corazortechnology@gmail.com',
+        to: 'corazortechnology@gmail.com',
         subject: 'register',
         html: `<h2>Contact Form Submission</h2>
                 <p><strong>Name : </strong>${name}</p>

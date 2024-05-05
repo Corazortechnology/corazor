@@ -29,12 +29,25 @@ const Footer = () => {
         <div className='flex-[1.5] w-full flex flex-row justify-end flex-wrap md:mt-0 mt-10'>
           {/* {footerLinks.map((link) => ( */}
             <div  className='flex flex-col ss:my-0 my-4 min-w-[150px]'>
-            <div className=' flex  gap-2'>
+    
+           
+
+            </div>
+          {/* ))} */}
+        </div>
+     
+      </div>
+
+      <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]'>
+        <p className='font-poppins font-normal text-center text-[18px] leading-[27px] text-white'>
+          2024 Corazor . All Rights Reserved
+        </p>  
+                <div className=' flex  gap-2'>
 
 <Link
 to="/terms"
 >
-<button className='mt-5 bg-secondary font-bold  text-black p-3 border rounded-lg'>
+<button className=' font-bold  text-white p-3 border-bottom rounded-lg'>
 Terms and conditions 
 </button>
 {/* <h4 className=' cursor-pointer font-poppins font-medium text-[18px] leading-[27px] text-[#06d6a0] mr-2 mt-7'>
@@ -45,38 +58,23 @@ Terms and conditions
 <Link
 to="/policy"
 >
-  <button className='mt-5 bg-secondary font-bold  text-black p-3 border rounded-lg'>
+  <button className=' font-bold  text-white p-3 border-bottom rounded-lg'>
+  Privacy Policy
+</button>
+
+     
+</Link>
+<Link
+to="/refundPolicy"
+>
+  <button className=' font-bold  text-white p-3 border-bottom rounded-lg'>
   Refund Policy
 </button>
 
-      {/* <h4 className=' cursor-pointer font-poppins font-medium text-[18px] leading-[27px]  mt-7 text-[#06d6a0]'>
-      Refund Policy
-      </h4>   */}
+     
 </Link>
 
 </div>
-           
-{/*             
-              {/* <ul className='list-none mt-4'>
-                {link.links.map((item, index) => (
-                  <li 
-                    key={item.name} 
-                    className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${index !== link.links.length - 1 ? 'mb-4' : 'mb-0'}`}
-                  >
-                    {item.name}
-                  </li>
-                ))}
-              </ul> */}
-            </div>
-          {/* ))} */}
-        </div>
-     
-      </div>
-
-      <div className='w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]'>
-        <p className='font-poppins font-normal text-center text-[18px] leading-[27px] text-white'>
-          2024 Corazor . All Rights Reserved.
-        </p>  
        
         <div className='flex flex-row md:mt-0 mt-6'>
 
@@ -92,10 +90,13 @@ to="/policy"
             </a>
           ))}
           
-        </div>   
+        </div>  
+
+         
  
       </div>
     </section>
+    
   )
 }
 

@@ -195,19 +195,32 @@ const Projects = () => {
   return (
     <section className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2
+      <h2 className={`${styles.heading2} leading-2  `}>
+        <span className="text-gradient">
+
+      Discover
+
+        </span>
+       <span className=""> What </span> We've  
+       <span className=" ml-1 text-gradient">
+        
+        Built
+        </span>
+        </h2>
+        {/* <h2
           className={`${styles.heading2} text-ss leading-tight ss:text-sm md:text-lg lg:text-xl`}
         >
-          Our Projects <br className="sm:block hidden" />
+         
           Discover What We've Built
-        </h2>
-        <p
+          {/* <br className="sm:block hidden" /> */}
+        {/* </h2>  */}
+        {/* <p
           className={`${styles.paragraph} max-w-xs ss:max-w-ss sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mt-5`}
         >
           Take a look at our portfolio to see the range of our capabilities and
           the projects we're proud of. From innovative apps to dynamic websites,
           explore our work to find inspiration for your next project.
-        </p>
+        </p> */}
 
         <div className="flex flex-wrap mt-3 mb-4 gap-4">
           {techStackOptions.map((techStack) => (
@@ -215,8 +228,8 @@ const Projects = () => {
               key={techStack}
               className={`px-6 py-2 rounded ${
                 selectedTechStack === techStack
-                  ? "bg-blue-gradient text-black font-semibold"
-                  : "bg-black-200 opacity-30 text-white font-semibold"
+                  ? "bg-[#25a18e] text-white font-semibold rounded-lg mb-5"
+                  : "bg-black-200 opacity-30 text-white font-semibold mb-5"
               }`}
               onClick={() => setSelectedTechStack(techStack)}
             >
@@ -235,10 +248,12 @@ const Projects = () => {
               initial={{ opacity: 0.5, x: project.id % 2 === 0 ? -100 : 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
-              className="bg-black-400 border shadow-3xl border-white text-white p-4 rounded-lg relative"
+              className="bg-black-400 
+              
+                 text-white p-4 rounded-lg relative"
             >
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center rounded-lg">
-                <p className="text-white text-xs ss:text-sm md:text-md lg:text-lg p-4">
+              <div className="absolute inset-0 drop-shadow-2xl bg-black bg-opacity-80 opacity-0 hover:opacity-100 transition-opacity duration-300 flex justify-center items-center rounded-lg">
+                <p className="text-[#ffff] tracking-[0.05em]  font-sans text-sm text-bold ss:text-sm md:text-md lg:text-lg p-4">
                   {project.description}
                 </p>
               </div>
@@ -247,7 +262,7 @@ const Projects = () => {
                 alt={project.name}
                 className="w-full h-40 object-cover rounded-lg"
               />
-              <h3 className="mt-2 text-md ss:text-lg md:text-xl font-semibold">
+              <h3 className="  mt-3 text-[#8e9aaf]  font-mono  text-[10px] ss:text-lg md:text-xl font-semibold">
                 {project.name}
               </h3>
             </motion.div>
