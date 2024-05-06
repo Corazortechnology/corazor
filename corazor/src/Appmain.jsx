@@ -15,6 +15,7 @@ import {
 import Form from './components/Form';
 import styles from './style';
 import Technology from './components/Technologies';
+import Projects from './components/Projcets';
 
 const Mainapp = () => {
   return (
@@ -35,6 +36,10 @@ const Mainapp = () => {
         </div>
         <div id="About" className='bg-primary px-11 py-5'>
           <Technology />
+        </div>
+        
+        <div id="About" className='bg-primary mt-[-5%] px-5 '>
+          <Projects />
         </div>
 
         <div id="About" className='bg-primary mt-[-5%] px-5 '>
