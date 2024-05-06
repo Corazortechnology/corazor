@@ -1,17 +1,17 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom/client'
-// import App from './App'
-// import { BrowserRouter } from "react-router-dom";
-// import './index.css'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { BrowserRouter } from "react-router-dom";
+import './index.css'
 
-// ReactDOM.createRoot(document.getElementById('root')).render(
-//   <React.StrictMode>
-//     <BrowserRouter >
-//       <App />
-//     </BrowserRouter>
-//   </React.StrictMode>,
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter >
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
   
-// )
+)
 
 // import React from 'react';
 // import ReactDOM from 'react-dom';
@@ -30,11 +30,11 @@
 
 
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './App';
+// import { BrowserRouter } from 'react-router-dom';
+// import './index.css';
 
 // ReactDOM.createRoot(document.getElementById('root')).render(
 //   <React.StrictMode>
@@ -45,13 +45,13 @@ import './index.css';
 // );
 
 
-import { HashRouter } from 'react-router-dom';
+// import { HashRouter } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <HashRouter>
-      <App />
-    </HashRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <HashRouter>
+//       <App />
+//     </HashRouter>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
