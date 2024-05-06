@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import { Link } from "react-router-dom";
 import corazor from "../assets/corazor2.svg";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
