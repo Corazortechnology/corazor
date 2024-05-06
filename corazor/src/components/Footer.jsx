@@ -47,9 +47,10 @@ const Footer = () => {
 <Link
 to="/terms"
 >
-<button className=' font-bold  text-white p-3 border-bottom rounded-lg'>
+  Terms and conditions
+{/* <terms className=' font-bold  text-white p-3 border-bottom rounded-lg'>
 Terms and conditions 
-</button>
+</terms> */}
 {/* <h4 className=' cursor-pointer font-poppins font-medium text-[18px] leading-[27px] text-[#06d6a0] mr-2 mt-7'>
     
       </h4>  */}
@@ -58,18 +59,18 @@ Terms and conditions
 <Link
 to="/policy"
 >
-  <button className=' font-bold  text-white p-3 border-bottom rounded-lg'>
+  <terms className=' font-bold  text-white p-3 border-bottom rounded-lg'>
   Privacy Policy
-</button>
+</terms>
 
      
 </Link>
 <Link
 to="/refundPolicy"
 >
-  <button className=' font-bold  text-white p-3 border-bottom rounded-lg'>
+  <terms className=' font-bold  text-white p-3 border-bottom rounded-lg'>
   Refund Policy
-</button>
+</terms>
 
      
 </Link>
