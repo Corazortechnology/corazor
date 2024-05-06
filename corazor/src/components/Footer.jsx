@@ -2,8 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../style";
 import { footerLinks, socialMedia } from "../constants";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const terms = () => {
+    navigate("/terms");
+  };
+  const policy = () => {
+    navigate("/policy");
+  };
+  const refundPolicy = () => {
+    navigate("/refundPolicy");
+  };
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -31,24 +43,24 @@ const Footer = () => {
         </p>
         <div className=" flex  gap-2">
           {/* Links to terms, policy, and refund policy */}
-          <Link
-            to="/terms"
-            className="font-bold text-white p-3 border-bottom rounded-lg"
+          <h4
+            onClick={terms}
+            className="font-bold text-white p-3 border-bottom rounded-lg hover:cursor-pointer"
           >
             Terms and conditions
-          </Link>
-          <Link
-            to="/policy"
-            className="font-bold text-white p-3 border-bottom rounded-lg"
+          </h4>
+          <h4
+            onClick={policy}
+            className="font-bold text-white p-3 border-bottom rounded-lg hover:cursor-pointer"
           >
             Privacy Policy
-          </Link>
-          <Link
-            to="/refundPolicy"
-            className="font-bold text-white p-3 border-bottom rounded-lg"
+          </h4>
+          <h4
+            onClick={refundPolicy}
+            className="font-bold text-white p-3 border-bottom rounded-lg hover:cursor-pointer"
           >
             Refund Policy
-          </Link>
+          </h4>
         </div>
         <div className="flex flex-row md:mt-0 mt-6">
           {/* Render social media icons */}
