@@ -18,7 +18,7 @@ import Technology from "./components/Technologies";
 import Projcets from "./components/Projcets";
 // import Swypemate from '../screen/swipemateScrren';
 import Mainapp from "./Appmain";
-import Swipemate from "./components/swipemate/Swipemate";
+// import Swipemate from "./components/swipemate/Swipemate";
 // <<<<<<< HEAD
 import Terms from "./components/Terms";
 import "./components/app.scss";
