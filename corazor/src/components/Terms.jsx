@@ -1,12 +1,12 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
+// import { useInView } from 'react-intersection-observer';
 import { layout } from '../style';
 
 const Terms = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.4,
-  });
+  // const { ref, inView } = useInView({
+  //   triggerOnce: true,
+  //   threshold: 0.4,
+  // });
 
   return (
     <div className='w-full bg-[#111315] flex justify-center items-center py-5'>
