@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import {
   Billing, 
   Business, 
@@ -10,47 +9,44 @@ import {
   Hero, 
   Navbar, 
   Stats, 
-  Testimonials 
+  Testimonials,
+  
 } from './components';
 import Form from './components/Form';
 import styles from './style';
 import Technology from './components/Technologies';
-import Projcets from './components/Projcets';
-// import Swypemate from '../screen/swipemateScrren';
-const   Mainapp = () => {
+
+const Mainapp = () => {
   return (
     <React.StrictMode>
-     
-        <div className='bg-primary w-full overflow-hidden'>
-          <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-            <div className={`${styles.boxWidth}`}>
-              <Navbar />
-             
-            </div>
-          </div>
-          
-          <div className={`bg-primary ${styles.flexStart}`}>
-            <div className={`${styles.boxWidth}`}>
-              <Hero />  
-            </div>
-          </div>
-          <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
-            <div className={`${styles.boxWidth}`}>
-              {/* <Stats /> */}
-              <Business />
-              <Billing />
-              <CardDeal />
-              <Technology />
-              <Projcets />
-              {/* <Testimonials /> Uncomment if needed */}
-              {/* <Clients /> Uncomment if needed */}
-              {/* <CTA />  */}
-              <Form />
-              <Footer />
-            </div>
+      <div className='bg-primary w-full overflow-hidden'>
+        <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Navbar />
           </div>
         </div>
-     
+        
+        <div className='bg-primary ${styles.flexStart}' id="home">
+          <Hero />
+        </div>
+
+        <div id="features" className='bg-primary px-11 py-5'>
+          <Business />
+        </div>
+        <div id="About" className='bg-primary px-11 py-5'>
+          <Technology />
+        </div>
+
+        <div id="About" className='bg-primary mt-[-5%] px-5 '>
+          <Billing />
+        </div>
+
+        <div id="Contact Us" className='bg-primary px-8 py-5'>
+          <Form />
+        </div>
+
+        <Footer />
+      </div>
     </React.StrictMode>
   );
 };

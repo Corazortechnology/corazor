@@ -65,7 +65,7 @@ Experience the Future of Efficiency with Our Expert Team."
         <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient"/>
       </motion.div>
       <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted/>
+        {/* <GetStarted/> */}
       </div>
     </section>
   )

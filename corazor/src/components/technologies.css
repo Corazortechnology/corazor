@@ -1,0 +1,7 @@
+/* Add these rules to your component's CSS or inline styles */
+@media (max-width: 450px) {
+    .tech-card {
+      width: 250px;  /* Smaller width for small screens */
+    }
+  }
+  

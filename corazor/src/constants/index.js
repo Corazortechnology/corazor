@@ -20,30 +20,35 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
-    route:""
+    route: "/#home",  // Assuming these link to IDs for internal scrolling
+    external: false
   },
   {
     id: "features",
     title: "Features",
-    route:""
+    route: "/#features",  
+    external: false
   },
- {
-  id:"About",
-  title:"About",
-  route:""
- },
- {
-  id:"Contact Us",
-  title:"Contact Us",
-  route:""
- },
-
-{
-  id:"Swipemate",
-  title:"Product",
-  route:"https://www.swypemate.com/"
-}
+  {
+    id: "About",
+    title: "About",
+    route: "/#About",  
+    external: false
+  },
+  {
+    id: "Contact Us",
+    title: "Contact Us",
+    route: "/#ContactUs",  
+    external: false
+  }, 
+  {
+    id: "Swipemate",
+    title: "Product",
+    route: "https://www.swypemate.com/",
+    external: true  // This link is external and will open a new tab
+  }
 ];
+
 
 
   export const features = [

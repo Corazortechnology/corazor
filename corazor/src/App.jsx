@@ -44,6 +44,7 @@ const App = () => {
         <Route path="/policy" element={<PrivacyPolicy />} />
       <Route path="/refundPolicy" element={<RefundPolicy/>}/>
       <Route path="/policycontainer" element={<PolicyContainer/>}/>
+      <Route path='/about' element={<Business/>} />
       
 
 

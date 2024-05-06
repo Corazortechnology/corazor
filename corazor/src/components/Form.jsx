@@ -178,7 +178,7 @@ const Form = () => {
         transition={{ duration: 0.8 }}
         className={layout.sectionInfo}
       >
-        <h2 className={styles.heading2}>Get in Touch <br className='sm:block hidden'/>Let's Build Something Great Together.</h2>
+        {/* <h2 className={styles.heading2}>Get in Touch <br className='sm:block hidden'/>Let's Build Something Great Together.</h2> */}
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
           Ready to start your project? Fill out the form below to send us a message and we will get back to you as soon as possible.
         </p>
