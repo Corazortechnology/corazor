@@ -20,25 +20,25 @@ export const navLinks = [
   {
     id: "home",
     title: "Home",
-    route: "/#home",  // Assuming these link to IDs for internal scrolling
+    route: "/home",  // Assuming these link to IDs for internal scrolling
     external: false
   },
   {
     id: "features",
     title: "Features",
-    route: "/#features",  
+    route: "/features",  
     external: false
   },
   {
     id: "About",
     title: "About",
-    route: "/#About",  
+    route: "/About",  
     external: false
   },
   {
     id: "Contact Us",
     title: "Contact Us",
-    route: "/#ContactUs",  
+    route: "/ContactUs",  
     external: false
   }, 
   {
