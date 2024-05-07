@@ -35,8 +35,7 @@ export const navLinks = [
   {
     id: "Contact Us",
     title: "Contact Us",
-    // route: "#contact",
-    route: "/terms",
+    route: "#contact",
   },
 
   {
