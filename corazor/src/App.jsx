@@ -30,8 +30,8 @@ import PolicyContainer from "./components/PolicyContainers";
 
 const App = () => {
   return (
-    // <React.StrictMode>
-    // <Router>
+    <React.StrictMode>
+      {/* <Router> */}
       <Routes>
         <Route path="/" element={<Mainapp />} />
         <Route path="/terms" element={<Terms />} />
@@ -42,8 +42,8 @@ const App = () => {
         {/* <Route path="/policycontainer" element={<PolicyContainer/>}/> */}
         {/* <Route path='/about' element={<Business/>} /> */}
       </Routes>
-    // </Router>
-    // </React.StrictMode>
+      {/* </Router> */}
+    </React.StrictMode>
   );
 };
 
