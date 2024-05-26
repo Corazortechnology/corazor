@@ -1,21 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styles from "../style";
+import React, { useState } from "react";
 import { footerLinks, socialMedia } from "../constants";
-import { useNavigate } from "react-router-dom";
+import styles from "../style";
+import TermsPopup from "./TermsPopup";
+import PrivacyPolicyPopup from "./PrivacyPolicyPopup";
+import RefundPolicyPopup from "./RefundPolicyPopup";
 
 const Footer = () => {
-  const navigate = useNavigate();
+  const [showTerms, setShowTerms] = useState(false);
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const [showRefundPolicy, setShowRefundPolicy] = useState(false);
 
-  const terms = () => {
-    navigate("/terms");
-  };
-  const policy = () => {
-    navigate("/policy");
-  };
-  const refundPolicy = () => {
-    navigate("/refundPolicy");
-  };
   return (
     <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -44,19 +38,19 @@ const Footer = () => {
         <div className=" flex  gap-2">
           {/* Links to terms, policy, and refund policy */}
           <h4
-            onClick={terms}
+            onClick={() => setShowTerms(true)}
             className="font-bold text-white p-3 border-bottom rounded-lg hover:cursor-pointer"
           >
             Terms and conditions
           </h4>
           <h4
-            onClick={policy}
+            onClick={() => setShowPrivacyPolicy(true)}
             className="font-bold text-white p-3 border-bottom rounded-lg hover:cursor-pointer"
           >
             Privacy Policy
           </h4>
           <h4
-            onClick={refundPolicy}
+            onClick={() => setShowRefundPolicy(true)}
             className="font-bold text-white p-3 border-bottom rounded-lg hover:cursor-pointer"
           >
             Refund Policy
@@ -77,6 +71,10 @@ const Footer = () => {
           ))}
         </div>
       </div>
+
+      {showTerms && <TermsPopup onClose={() => setShowTerms(false)} />}
+      {showPrivacyPolicy && <PrivacyPolicyPopup onClose={() => setShowPrivacyPolicy(false)} />}
+      {showRefundPolicy && <RefundPolicyPopup onClose={() => setShowRefundPolicy(false)} />}
     </section>
   );
 };

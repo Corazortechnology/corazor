@@ -20,13 +20,13 @@ import Projcets from "./components/Projcets";
 import Mainapp from "./Appmain";
 // import Swipemate from "./components/swipemate/Swipemate";
 // <<<<<<< HEAD
-import Terms from "./components/Terms";
+import Terms from "./components/TermsPopup";
 import "./components/app.scss";
-import PrivacyPolicy from "./components/Policy";
-import RefundPolicy from "./components/RefundPolicy";
+import PrivacyPolicy from "./components/PrivacyPolicyPopup";
+import RefundPolicy from "./components/RefundPolicyPopup";
 import PolicyContainer from "./components/PolicyContainers";
 
-// >>>>>>> c276642ca1bf99f60c6d943b3eba3a9f936191bc
+
 
 const App = () => {
   return (
@@ -38,12 +38,8 @@ const App = () => {
         <Route path="/policy" element={<PrivacyPolicy />} />
         <Route path="/refundPolicy" element={<RefundPolicy />} />
 
-        {/* <Route path="/swipemate" element={<Swipemate />} /> */}
-        {/* <Route path="/policycontainer" element={<PolicyContainer/>}/> */}
-        {/* <Route path='/about' element={<Business/>} /> */}
       </Routes>
-    // </Router>
-    // </React.StrictMode>
+
   );
 };
 
