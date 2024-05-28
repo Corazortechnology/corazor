@@ -66,8 +66,10 @@ import smartMeds from "./medicine.jpeg";
 import supplychain from "./suplychain.webp";
 import realEstate from "./real-state.jpeg";
 import certificate from "./certificate.jpg";
+import aboutus from "./aboutus.svg"
 export {
   webDev,
+  aboutus,
   ecommerce,
   helth,
   stocks,

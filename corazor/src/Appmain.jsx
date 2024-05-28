@@ -16,6 +16,7 @@ import Form from "./components/Form";
 import styles from "./style";
 import Technology from "./components/Technologies";
 import Projcets from "./components/Projcets";
+import AboutUs from "./components/AboutUs";
 // import Swypemate from '../screen/swipemateScrren';
 const Mainapp = () => {
   return (
@@ -47,6 +48,9 @@ const Mainapp = () => {
 
             <section id="projects">
               <Projcets />
+            </section>
+            <section id="projects">
+              <AboutUs />
             </section>
             {/* <Testimonials /> Uncomment if needed */}
             {/* <Clients /> Uncomment if needed */}

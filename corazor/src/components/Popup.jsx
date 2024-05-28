@@ -9,11 +9,11 @@ const Popup = ({ title, content, onClose }) => {
         <div className="close-btn" onClick={onClose}>
           <img src={Xicon} alt="Close" />
         </div>
-        <h2 className="text-center text-3xl text-[#f8f9fa] font-bold mb-5">
+        <h2 className="text-center tracking-wide text-3xl text-[#f8f9fa] font-bold mb-5">
           {title}
           <hr className="mt-1 border-t-[1px] border-[#f4f3ee]" />
         </h2>
-        <div className="max-w-[90%] text-[#6c757d] text-bold text-center mb-5">
+        <div className="max-w-[90%] text-[#6c757d] text-bold text-left mb-5">
           {content}
         </div>
       </div>
