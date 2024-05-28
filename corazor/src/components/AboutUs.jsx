@@ -25,10 +25,19 @@ const AboutUs = () => {
           Welcome to our company! We are dedicated to delivering top-notch digital solutions to meet your business needs. Our team of experts works diligently to provide customized software development, ensuring your project is executed with precision and care. Connect with us to explore how we can bring your aboutuss to life.
         </p>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          <strong>Contact Details:</strong><br />
-          Address: 123 Tech Street, Innovation City<br />
-          Phone: (123) 456-7890<br />
-          Email: contact@ourcompany.com
+          <strong >Contact Details:</strong><br />
+          Address: 
+          Headquarters- Saharanpur, Uttar Pradesh
+<br />
+Branch office - New Delhi, India
+          {/* Phone: (123) 456-7890 */}
+          <br />
+            Email:   
+          <span  className='text-gradient'>
+             corazortechnology@gmail.com
+            </span> 
+            
+            
         </p>
       </motion.div>
       <motion.div
