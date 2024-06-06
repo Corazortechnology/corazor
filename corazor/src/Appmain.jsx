@@ -49,7 +49,7 @@ const Mainapp = () => {
             <section id="projects">
               <Projcets />
             </section>
-            <section id="projects">
+            <section id="about">
               <AboutUs />
             </section>
             {/* <Testimonials /> Uncomment if needed */}

@@ -67,7 +67,9 @@ import supplychain from "./suplychain.webp";
 import realEstate from "./real-state.jpeg";
 import certificate from "./certificate.jpg";
 import aboutus from "./aboutus.svg"
+import Xicon from "./x-button.svg"
 export {
+  Xicon,
   webDev,
   aboutus,
   ecommerce,
